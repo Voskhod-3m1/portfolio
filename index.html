@@ -13,10 +13,6 @@
         body { font-family: 'Inter', sans-serif; }
         .case-card:hover img { transform: scale(1.05); }
         .swiper-pagination-bullet-active { background: #2563eb !important; }
-        .testimonial-swiper { padding: 0 50px 60px 50px !important; } /* Отступы для стрелок */
-        .swiper-button-next, .swiper-button-prev { color: #2563eb !important; transform: scale(0.7); }
-        .social-icon svg { width: 32px; height: 32px; transition: all 0.3s ease; }
-        .social-icon:hover svg { transform: translateY(-3px); }
     </style> 
 </head>
 <body class="bg-white text-slate-900 leading-relaxed">
@@ -26,15 +22,15 @@
             <div class="text-xl font-bold tracking-tighter text-blue-600 uppercase">Андрей Давиденко</div>
             <ul class="hidden md:flex space-x-8 text-sm font-medium">
                 <li><a href="#top" class="hover:text-blue-600 transition">Главная</a></li>
-                <li><a href="#cases" class="hover:text-blue-600 transition">Кейсы</a></li> 
-                <li><a href="#services" class="hover:text-blue-600 transition">Услуги</a></li>
+                <li><a href="https://voskhod-3m1.github.io/portfolio/cases" class="hover:text-blue-600 transition">Кейсы</a></li> 
                 <li><a href="#testimonials" class="hover:text-blue-600 transition">Отзывы</a></li>
+                <li><a href="#experience" class="hover:text-blue-600 transition">Опыт</a></li>
                 <li><a href="#contacts" class="hover:text-blue-600 transition">Контакты</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="top" class="pt-32 pb-20 md:pt-48 md:pb-32 container mx-auto px-6">
+    <section class="pt-32 pb-20 md:pt-48 md:pb-32 container mx-auto px-6">
         <div class="flex flex-col md:flex-row items-center gap-12">
             <div class="w-full md:w-1/2 order-2 md:order-1 text-center md:text-left">
                 <h1 class="text-4xl md:text-6xl font-bold mb-6 tracking-tight leading-tight">
@@ -61,126 +57,217 @@
             <h2 class="text-3xl font-bold mb-4">Избранные кейсы</h2>
             <p class="text-slate-600 max-w-lg mx-auto">Проекты, которыми я горжусь</p>
         </div>
+        
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
             <div class="case-card group flex flex-col h-full bg-white rounded-2xl border border-slate-100 p-4 shadow-sm hover:shadow-md transition">
                 <div class="rounded-xl overflow-hidden mb-4 aspect-video bg-slate-200">
                     <img src="https://placehold.co/600x400?text=Rock+Bar" class="w-full h-full object-cover transition duration-500">
                 </div>
                 <span class="text-[10px] font-bold text-blue-600 uppercase tracking-widest">Интервью</span>
-                <h3 class="text-xl font-bold mt-2 mb-3 leading-snug group-hover:text-blue-600 transition">Как превратили локальный бар в масштабное комьюнити</h3>
-                <p class="text-slate-500 text-sm mb-6 flex-grow">История трансформации «бара для своих» в прибыльный проект с лояльной аудиторией.</p>
+                <h3 class="text-xl font-bold mt-2 mb-3 leading-snug group-hover:text-blue-600 transition">Как превратить локальный бар в масштабное комьюнити</h3>
+                <p class="text-slate-500 text-sm mb-6 flex-grow">История трансформации «бара для своих» в прибыльный проект с лояльной аудиторией. Разбираем, почему атмосфера важнее меню и как превращать случайных гостей в амбассадоров.</p>
                 <a href="https://zhiza.evotor.ru/kak-my-prevratili-rok-bar-dlya-druzej-v-bolshoe-komyuniti-7-sovetov-predprinimatelyam/" target="_blank" class="inline-block text-center bg-slate-900 text-white text-xs font-bold py-3 px-6 rounded-lg hover:bg-blue-600 transition">Подробнее</a>
             </div>
+
             <div class="case-card group flex flex-col h-full bg-white rounded-2xl border border-slate-100 p-4 shadow-sm hover:shadow-md transition">
                 <div class="rounded-xl overflow-hidden mb-4 aspect-video bg-slate-200">
                     <img src="https://placehold.co/600x400?text=HR+Services" class="w-full h-full object-cover transition duration-500">
                 </div>
                 <span class="text-[10px] font-bold text-blue-600 uppercase tracking-widest">Подборка</span>
                 <h3 class="text-xl font-bold mt-2 mb-3 leading-snug group-hover:text-blue-600 transition">Где искать таланты сегодня: обзор 9 лучших сервисов для HR</h3>
-                <p class="text-slate-500 text-sm mb-6 flex-grow">Анализ ключевых инструментов — от классических джоб-бордов до ИИ-сервисов.</p>
-                <a href="https://zhiza.evotor.ru/gde-sejchas-iskat-sotrudnikov-devyat-servisov-dlya-rukovoditeley-i-hr-specialistov/" target="_blank" class="inline-block text-center bg-slate-900 text-white text-xs font-bold py-3 px-6 rounded-lg hover:bg-blue-600 transition">Подробнее</a>
+                <p class="text-slate-500 text-sm mb-6 flex-grow">Анализ ключевых инструментов — от классических джоб-бордов до ИИ-сервисов. Узнайте, как оптимизировать найм и сократить время на поиск кандидата в 2024 году.</p>
+                <a href="https://zhiza.evotor.ru/gde-sejchas-iskat-sotrudnikov-devyat-servisov-dlya-rukovoditelej-i-hr-specialistov/" target="_blank" class="inline-block text-center bg-slate-900 text-white text-xs font-bold py-3 px-6 rounded-lg hover:bg-blue-600 transition">Подробнее</a>
             </div>
+
             <div class="case-card group flex flex-col h-full bg-white rounded-2xl border border-slate-100 p-4 shadow-sm hover:shadow-md transition">
                 <div class="rounded-xl overflow-hidden mb-4 aspect-video bg-slate-200">
                     <img src="https://placehold.co/600x400?text=CRM+XRM" class="w-full h-full object-cover transition duration-500">
                 </div>
-                <span class="text-[10px] font-bold text-blue-600 uppercase tracking-widest">Статья</span>
+                <span class="text-[10px] font-bold text-blue-600 uppercase tracking-widest">Информационная статья</span>
                 <h3 class="text-xl font-bold mt-2 mb-3 leading-snug group-hover:text-blue-600 transition">От простой базы к XRM: новый уровень управления отношениями</h3>
-                <p class="text-slate-500 text-sm mb-6 flex-grow">Как интеграция всех процессов в единую экосистему Saby помогает видеть бизнес на 360 градусов.</p>
+                <p class="text-slate-500 text-sm mb-6 flex-grow">Как интеграция всех процессов в единую экосистему Saby помогает видеть бизнес на 360 градусов. Кейс об автоматизации, превращающей хаос в систему.</p>
                 <a href="https://saby.ru/articles/crm/xrm" target="_blank" class="inline-block text-center bg-slate-900 text-white text-xs font-bold py-3 px-6 rounded-lg hover:bg-blue-600 transition">Подробнее</a>
             </div>
-        </div>
-    </section>
 
-    <section id="services" class="py-24 bg-slate-50">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold mb-12 text-center">Услуги</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-2xl border border-slate-200 hover:shadow-xl transition-all">
-                    <h3 class="font-bold text-xl mb-3 text-blue-600">Копирайтинг</h3>
-                    <p class="text-slate-500 text-sm">Тексты для лендингов и сайтов с высокой конверсией.</p>
+            <div class="case-card group flex flex-col h-full bg-white rounded-2xl border border-slate-100 p-4 shadow-sm hover:shadow-md transition">
+                <div class="rounded-xl overflow-hidden mb-4 aspect-video bg-slate-200">
+                    <img src="https://placehold.co/600x400?text=Global+IT" class="w-full h-full object-cover transition duration-500">
                 </div>
-                <div class="bg-white p-8 rounded-2xl border border-slate-200 hover:shadow-xl transition-all">
-                    <h3 class="font-bold text-xl mb-3 text-blue-600">Статьи</h3>
-                    <p class="text-slate-500 text-sm">Экспертные лонгриды для VC, Habr и профильных медиа.</p>
-                </div>
-                <div class="bg-white p-8 rounded-2xl border border-slate-200 hover:shadow-xl transition-all">
-                    <h3 class="font-bold text-xl mb-3 text-blue-600">Email-рассылки</h3>
-                    <p class="text-slate-500 text-sm">Цепочки писем, которые прогревают и продают.</p>
-                </div>
-                <div class="bg-white p-8 rounded-2xl border border-slate-200 hover:shadow-xl transition-all">
-                    <h3 class="font-bold text-xl mb-3 text-blue-600">Стратегия</h3>
-                    <p class="text-slate-500 text-sm">Контент-планы и позиционирование бренда на рынке.</p>
-                </div>
-                <div class="bg-white p-8 rounded-2xl border border-slate-200 hover:shadow-xl transition-all">
-                    <h3 class="font-bold text-xl mb-3 text-blue-600">Сценарии</h3>
-                    <p class="text-slate-500 text-sm">Сценарии для YouTube, Reels и рекламных роликов.</p>
-                </div>
-                <div class="bg-white p-8 rounded-2xl border border-slate-200 hover:shadow-xl transition-all">
-                    <h3 class="font-bold text-xl mb-3 text-blue-600">UX-копирайтинг</h3>
-                    <p class="text-slate-500 text-sm">Тексты для интерфейсов и личных кабинетов.</p>
-                </div>
+                <span class="text-[10px] font-bold text-blue-600 uppercase tracking-widest">Интервью</span>
+                <h3 class="text-xl font-bold mt-2 mb-3 leading-snug group-hover:text-blue-600 transition">Путь на международную арену: опыт Lingvanex</h3>
+                <p class="text-slate-500 text-sm mb-6 flex-grow">Реальный опыт запуска IT-продукта на зарубежных рынках. Как адаптировать софт под разные культуры и найти первых клиентов за границей.</p>
+                <a href="https://zhiza.evotor.ru/kak-razrabotchiku-vyvesti-svoj-produkt-na-mezhdunarodnyj-rynok-opyt-faundera-lingvanex/" target="_blank" class="inline-block text-center bg-slate-900 text-white text-xs font-bold py-3 px-6 rounded-lg hover:bg-blue-600 transition">Подробнее</a>
             </div>
+
+            <div class="case-card group flex flex-col h-full bg-white rounded-2xl border border-slate-100 p-4 shadow-sm hover:shadow-md transition">
+                <div class="rounded-xl overflow-hidden mb-4 aspect-video bg-slate-200">
+                    <img src="https://placehold.co/600x400?text=Regional+SEO" class="w-full h-full object-cover transition duration-500">
+                </div>
+                <span class="text-[10px] font-bold text-blue-600 uppercase tracking-widest">Информационная статья</span>
+                <h3 class="text-xl font-bold mt-2 mb-3 leading-snug group-hover:text-blue-600 transition">Захват регионов: как продвинуть сайт по всей России</h3>
+                <p class="text-slate-500 text-sm mb-6 flex-grow">Пошаговое руководство по масштабированию видимости сайта за пределами столицы: поддомены против папок и работа с локальными ссылками.</p>
+                <a href="https://findby.ru/blog/prodvizhenie-sajta-po-regionam-kak-prodvinut-po-vsej-rossii/" target="_blank" class="inline-block text-center bg-slate-900 text-white text-xs font-bold py-3 px-6 rounded-lg hover:bg-blue-600 transition">Подробнее</a>
+            </div>
+
+            <div class="case-card group flex flex-col h-full bg-white rounded-2xl border border-slate-100 p-4 shadow-sm hover:shadow-md transition">
+                <div class="rounded-xl overflow-hidden mb-4 aspect-video bg-slate-200">
+                    <img src="https://placehold.co/600x400?text=Custom+SEO" class="w-full h-full object-cover transition duration-500">
+                </div>
+                <span class="text-[10px] font-bold text-blue-600 uppercase tracking-widest">Информационная статья</span>
+                <h3 class="text-xl font-bold mt-2 mb-3 leading-snug group-hover:text-blue-600 transition">Почему шаблонное SEO больше не работает</h3>
+                <p class="text-slate-500 text-sm mb-6 flex-grow">Исследуем, как глубокий анализ ниши и кастомная стратегия влияют на ROI и позволяют обходить крупных конкурентов с огромными бюджетами.</p>
+                <a href="https://findby.ru/blog/individualnyj-podhod-v-seo/" target="_blank" class="inline-block text-center bg-slate-900 text-white text-xs font-bold py-3 px-6 rounded-lg hover:bg-blue-600 transition">Подробнее</a>
+            </div>
+
         </div>
     </section>
 
-    <section id="testimonials" class="py-20 bg-white">
+    <div class="mt-16 mb-24 text-center">
+            <a href="https://voskhod-3m1.github.io/portfolio/cases" target="_blank" class="inline-flex items-center gap-2 bg-white border-2 border-blue-600 text-blue-600 px-10 py-3 rounded-full font-bold hover:bg-blue-600 hover:text-white transition-all duration-300 shadow-lg shadow-blue-100 group">
+                Все кейсы
+                <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                </svg>
+            </a>
+        </div>
+
+   <section id="testimonials" class="py-20 bg-slate-50">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold mb-12 text-center text-blue-600">Отзывы клиентов</h2>
-            <div class="relative max-w-7xl mx-auto">
-                <div class="swiper testimonial-swiper">
+            
+            <div class="relative max-w-6xl mx-auto px-12">
+                <div class="swiper testimonialSwiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 flex flex-col justify-between h-48">
-                                    <p class="text-xs italic text-slate-600">"Работа выполнена в срок. Андрей сразу понял задачу и предложил решение лучше плана."</p>
-                                    <div class="flex items-center gap-3 pt-4 border-t border-slate-200">
-                                        <div class="w-8 h-8 bg-blue-100 rounded-full"></div>
-                                        <div><div class="font-bold text-[10px] text-blue-600">Алексей П.</div><div class="text-[9px] text-slate-400">CEO TechStart</div></div>
+                        <div class="swiper-slide h-auto">
+                            <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm h-full flex flex-col justify-between">
+                                <p class="text-[11px] leading-relaxed text-slate-600 italic mb-6">"Работа выполнена в срок. Андрей сразу понял задачу и предложил решение, которое сработало лучше, чем мы планировали."</p>
+                                <div class="flex items-center gap-3">
+                                    <img src="https://placehold.co/100x100" class="w-10 h-10 rounded-full" alt="Клиент">
+                                    <div>
+                                        <a href="#" class="font-bold text-xs text-blue-600 hover:underline">Алексей Петров</a>
+                                        <div class="text-[10px] text-slate-400">CEO "TechStart"</div>
                                     </div>
                                 </div>
-                                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 flex flex-col justify-between h-48">
-                                    <p class="text-xs italic text-slate-600">"Конверсия лендинга выросла на 15% после правок Андрея."</p>
-                                    <div class="flex items-center gap-3 pt-4 border-t border-slate-200">
-                                        <div class="w-8 h-8 bg-blue-100 rounded-full"></div>
-                                        <div><div class="font-bold text-[10px] text-blue-600">Мария С.</div><div class="text-[9px] text-slate-400">Маркетолог</div></div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide h-auto">
+                            <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm h-full flex flex-col justify-between">
+                                <p class="text-[11px] leading-relaxed text-slate-600 italic mb-6">"Профессиональный подход к текстам. Конверсия лендинга выросла на 15% после внедрения новых смысловых блоков."</p>
+                                <div class="flex items-center gap-3">
+                                    <img src="https://placehold.co/100x100" class="w-10 h-10 rounded-full" alt="Клиент">
+                                    <div>
+                                        <a href="#" class="font-bold text-xs text-blue-600 hover:underline">Мария Сидорова</a>
+                                        <div class="text-[10px] text-slate-400">Маркетолог "GreenFood"</div>
                                     </div>
                                 </div>
-                                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 flex flex-col justify-between h-48">
-                                    <p class="text-xs italic text-slate-600">"Редко встретишь копирайтера, который так глубоко погружается в ТЗ."</p>
-                                    <div class="flex items-center gap-3 pt-4 border-t border-slate-200">
-                                        <div class="w-8 h-8 bg-blue-100 rounded-full"></div>
-                                        <div><div class="font-bold text-[10px] text-blue-600">Игорь В.</div><div class="text-[9px] text-slate-400">Founder IT</div></div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide h-auto">
+                            <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm h-full flex flex-col justify-between">
+                                <p class="text-[11px] leading-relaxed text-slate-600 italic mb-6">"Профессиональный подход к текстам. Конверсия лендинга выросла на 15% после внедрения новых смысловых блоков."</p>
+                                <div class="flex items-center gap-3">
+                                    <img src="https://placehold.co/100x100" class="w-10 h-10 rounded-full" alt="Клиент">
+                                    <div>
+                                        <a href="#" class="font-bold text-xs text-blue-600 hover:underline">Мария Сидорова</a>
+                                        <div class="text-[10px] text-slate-400">Маркетолог "GreenFood"</div>
                                     </div>
                                 </div>
-                                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 flex flex-col justify-between h-48">
-                                    <p class="text-xs italic text-slate-600">"Тексты для рассылок получились живыми. Рекомендую!"</p>
-                                    <div class="flex items-center gap-3 pt-4 border-t border-slate-200">
-                                        <div class="w-8 h-8 bg-blue-100 rounded-full"></div>
-                                        <div><div class="font-bold text-[10px] text-blue-600">Елена К.</div><div class="text-[9px] text-slate-400">HR Director</div></div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide h-auto">
+                            <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm h-full flex flex-col justify-between">
+                                <p class="text-[11px] leading-relaxed text-slate-600 italic mb-6">"Редко встретишь копирайтера, который так глубоко погружается в техническую нишу. Результат превзошел ожидания."</p>
+                                <div class="flex items-center gap-3">
+                                    <img src="https://placehold.co/100x100" class="w-10 h-10 rounded-full" alt="Клиент">
+                                    <div>
+                                        <a href="#" class="font-bold text-xs text-blue-600 hover:underline">Игорь Волков</a>
+                                        <div class="text-[10px] text-slate-400">Основатель "IT-Solutions"</div>
                                     </div>
                                 </div>
-                                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 flex flex-col justify-between h-48">
-                                    <p class="text-xs italic text-slate-600">"Помог с позиционированием на старте проекта."</p>
-                                    <div class="flex items-center gap-3 pt-4 border-t border-slate-200">
-                                        <div class="w-8 h-8 bg-blue-100 rounded-full"></div>
-                                        <div><div class="font-bold text-[10px] text-blue-600">Дмитрий С.</div><div class="text-[9px] text-slate-400">Предприниматель</div></div>
-                                    </div>
-                                </div>
-                                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 flex flex-col justify-between h-48">
-                                    <p class="text-xs italic text-slate-600">"Всё четко, профессионально и в оговоренные сроки."</p>
-                                    <div class="flex items-center gap-3 pt-4 border-t border-slate-200">
-                                        <div class="w-8 h-8 bg-blue-100 rounded-full"></div>
-                                        <div><div class="font-bold text-[10px] text-blue-600">Анна Л.</div><div class="text-[9px] text-slate-400">Brand Manager</div></div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide h-auto">
+                            <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm h-full flex flex-col justify-between">
+                                <p class="text-[11px] leading-relaxed text-slate-600 italic mb-6">"Тексты для рассылок получились живыми и открываемыми. Команда довольна, будем работать дальше на постоянной основе."</p>
+                                <div class="flex items-center gap-3">
+                                    <img src="https://placehold.co/100x100" class="w-10 h-10 rounded-full" alt="Клиент">
+                                    <div>
+                                        <a href="#" class="font-bold text-xs text-blue-600 hover:underline">Елена Кравец</a>
+                                        <div class="text-[10px] text-slate-400">HR-директор "Global Team"</div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-pagination"></div>
                 </div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+
+                <button class="swiper-button-prev-custom absolute top-1/2 -left-4 -translate-y-1/2 z-10 w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center text-blue-600 hover:bg-blue-600 hover:text-white transition border border-slate-100">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                </button>
+                <button class="swiper-button-next-custom absolute top-1/2 -right-4 -translate-y-1/2 z-10 w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center text-blue-600 hover:bg-blue-600 hover:text-white transition border border-slate-100">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        new Swiper(".testimonialSwiper", {
+            slidesPerView: 1,
+            spaceBetween: 24,
+            navigation: {
+                nextEl: ".swiper-button-next-custom",
+                prevEl: ".swiper-button-prev-custom",
+            },
+            breakpoints: {
+                768: { slidesPerView: 2 },
+                1024: { slidesPerView: 6 } // Выводит 6 отзывов на десктопе
+            }
+        });
+    </script>
+
+<section id="services" class="py-24 bg-slate-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Услуги</h2>
+                <p class="text-slate-500">Решения для роста вашего бизнеса</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl border border-slate-200 hover:shadow-xl transition-all">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center mb-6 text-2xl font-bold">1</div>
+                    <h3 class="font-bold text-xl mb-3">Копирайтинг</h3>
+                    <p class="text-slate-500 text-sm">Продающие тексты для лендингов и многостраничных сайтов.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl border border-slate-200 hover:shadow-xl transition-all">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center mb-6 text-2xl font-bold">2</div>
+                    <h3 class="font-bold text-xl mb-3">Статьи и лонгриды</h3>
+                    <p class="text-slate-500 text-sm">Экспертные материалы для VC.ru, Habr и корпоративных блогов.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl border border-slate-200 hover:shadow-xl transition-all">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center mb-6 text-2xl font-bold">3</div>
+                    <h3 class="font-bold text-xl mb-3">Email-маркетинг</h3>
+                    <p class="text-slate-500 text-sm">Прогревающие воронки и регулярные рассылки для вашей базы.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl border border-slate-200 hover:shadow-xl transition-all">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center mb-6 text-2xl font-bold">4</div>
+                    <h3 class="font-bold text-xl mb-3">SMM Стратегии</h3>
+                    <p class="text-slate-500 text-sm">Разработка концепции и tone of voice для социальных сетей.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl border border-slate-200 hover:shadow-xl transition-all">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center mb-6 text-2xl font-bold">5</div>
+                    <h3 class="font-bold text-xl mb-3">Сценарии</h3>
+                    <p class="text-slate-500 text-sm">Тексты для рекламных роликов, YouTube-каналов и Reels.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl border border-slate-200 hover:shadow-xl transition-all">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center mb-6 text-2xl font-bold">6</div>
+                    <h3 class="font-bold text-xl mb-3">Аудит контента</h3>
+                    <p class="text-slate-500 text-sm">Разбор текущих текстов и поиск точек роста конверсии.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -189,12 +276,25 @@
         <h2 class="text-3xl font-bold mb-12 text-center">Сертификаты</h2>
         <div class="swiper certificateSwiper">
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="sertifikat-po-kursu-rabota-s-klientom-dlya-redaktorov-2.jpg" class="rounded-lg border shadow-sm"></div>
-                <div class="swiper-slide"><img src="sertifikat-po-bazovomu-kursu-glavreda.jpg" class="rounded-lg border shadow-sm"></div>
-                <div class="swiper-slide"><img src="sertifikat-po-pishi-sokrashchay.jpg" class="rounded-lg border shadow-sm"></div>
-                <div class="swiper-slide"><img src="sertifikat-po-yasno-ponyatno.jpg" class="rounded-lg border shadow-sm"></div>
-                <div class="swiper-slide"><img src="vizualnoe-povestvovanie.jpg" class="rounded-lg border shadow-sm"></div>
-                <div class="swiper-slide"><img src="sertifikat-po-kursu-rabota-s-klientom-dlya-redaktorov.jpg" class="rounded-lg border shadow-sm"></div>
+                <div class="swiper-slide"><img src="sertifikat-po-kursu-rabota-s-klientom-dlya-redaktorov-2.jpg" class="rounded-lg shadow-sm"></div>
+                <div class="swiper-slide"><img src="sertifikat-po-bazovomu-kursu-glavreda.jpg" class="rounded-lg shadow-sm"></div>
+                <div class="swiper-slide"><img src="sertifikat-po-pishi-sokrashchay.jpg" class="rounded-lg shadow-sm"></div>
+                <div class="swiper-slide"><img src="sertifikat-po-yasno-ponyatno.jpg" class="rounded-lg shadow-sm"></div>
+                <div class="swiper-slide"><img src="vizualnoe-povestvovanie.jpg" class="rounded-lg shadow-sm"></div>
+                <div class="swiper-slide"><img src="sertifikat-po-kursu-rabota-s-klientom-dlya-redaktorov.jpg" class="rounded-lg shadow-sm"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 border-t border-slate-100">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-3 md:grid-cols-6 gap-8 opacity-40 grayscale hover:grayscale-0 transition duration-500 items-center">
+                <img src="" class="h-6 mx-auto">
+                <img src="" class="h-6 mx-auto">
+                <img src="" class="h-6 mx-auto">
+                <img src="" class="h-6 mx-auto">
+                <img src="" class="h-6 mx-auto">
+                <img src="" class="h-6 mx-auto">
             </div>
         </div>
     </section>
@@ -202,17 +302,32 @@
     <footer id="contacts" class="bg-slate-900 text-white py-20">
         <div class="container mx-auto px-6 text-center">
             <h2 class="text-3xl font-bold mb-8">Готовы начать проект?</h2>
-            <a href="mailto:dandreys83@gmail.com" class="text-sm text-slate-400 hover:text-blue-400 transition underline block mb-12">dandreys83@gmail.com</a>
+            <a href="mailto:dandreys83@gmail.com" class="text-sm text-slate-400 hover:text-blue-400 transition underline">dandreys83@gmail.com</a>
             
-            <div class="flex justify-center items-center gap-8">
-                <a href="https://wa.me/79591393415" target="_blank" class="social-icon text-slate-400 hover:text-green-500">
-                    <svg fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            <div class="flex flex-wrap justify-center items-center gap-10 mt-12">
+                <a href="https://wa.me/79591393415" target="_blank" class="group flex flex-col items-center gap-2">
+                    <div class="w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center group-hover:bg-green-600 transition">
+                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.417-.003 6.557-5.338 11.892-11.893 11.892-1.997-.001-3.951-.5-5.688-1.448l-6.305 1.652zm6.599-3.835c1.406.836 2.964 1.277 4.562 1.278 4.887 0 8.862-3.974 8.864-8.863.001-2.37-.924-4.599-2.603-6.279-1.678-1.68-3.904-2.603-6.272-2.603-4.887 0-8.862 3.974-8.864 8.863-.001 1.748.511 3.453 1.478 4.952l-1.011 3.693 3.846-.991zm10.289-5.741c-.285-.143-1.688-.832-1.948-.927-.261-.095-.45-.143-.639.143-.19.285-.735.927-.9 1.093-.166.166-.332.19-.617.048-.285-.143-1.204-.444-2.293-1.415-.847-.756-1.418-1.69-1.585-1.975-.166-.285-.018-.439.124-.581.128-.127.285-.332.427-.499.143-.166.19-.285.285-.476.095-.19.048-.356-.024-.499-.071-.143-.639-1.545-.875-2.116-.23-.556-.465-.48-.639-.489-.166-.008-.356-.01-.546-.01-.19 0-.5.071-.76.356-.261.285-.998.975-.998 2.378 0 1.403 1.022 2.759 1.164 2.95.143.19 2.011 3.063 4.871 4.298.681.293 1.213.468 1.627.599.683.217 1.305.186 1.797.113.548-.082 1.688-.689 1.925-1.355.238-.665.238-1.236.166-1.355-.071-.118-.261-.19-.546-.333z"/></svg>
+                    </div>
+                    <span class="text-[10px] uppercase tracking-widest text-slate-500">WhatsApp</span>
                 </a>
-                <a href="https://t.me/voshod_3m1" target="_blank" class="social-icon text-slate-400 hover:text-blue-400">
-                    <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.161c-.18.717-.962 4.084-1.362 5.441-.168.56-.505 1.059-.832 1.059-.328 0-.547-.24-.863-.44-.453-.286-1.503-.941-1.785-1.134-.352-.24-.448-.376-.02-.857.092-.102 1.705-1.564 1.705-1.564.218-.216.425-.515.02-.515s-1.077.291-1.545.606c-.468.315-2.585 1.72-2.585 1.72-.416.27-.792.404-1.13.394-.373-.012-1.09-.214-1.623-.387-.654-.213-1.174-.326-1.129-.689.024-.189.284-.383.781-.582 3.073-1.339 5.124-2.221 6.155-2.647 2.943-1.215 3.553-1.425 3.952-1.425.088 0 .285.022.413.125.108.087.137.204.143.294a1.05 1.05 0 01-.012.43z"/></svg>
+                <a href="https://t.me/voshod_3m1" target="_blank" class="group flex flex-col items-center gap-2">
+                    <div class="w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center group-hover:bg-blue-500 transition">
+                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm5.891 8.113l-1.931 9.106c-.145.648-.529.808-1.07.507l-2.941-2.169-1.42 1.365c-.156.157-.287.287-.588.287l.211-3.001 5.46-4.932c.237-.21-.051-.328-.368-.116l-6.749 4.248-2.908-.91c-.633-.198-.645-.633.132-.936l11.365-4.381c.527-.193.988.121.807.932z"/></svg>
+                    </div>
+                    <span class="text-[10px] uppercase tracking-widest text-slate-500">Telegram</span>
                 </a>
-                <a href="https://vk.com/voskhod_3m" target="_blank" class="social-icon text-slate-400 hover:text-blue-500">
-                    <svg fill="currentColor" viewBox="0 0 24 24"><path d="M15.633 2.399h-7.266c-4.137 0-6.001 1.864-6.001 6.001v7.266c0 4.137 1.864 6.001 6.001 6.001h7.266c4.137 0 6.001-1.864 6.001-6.001v-7.266c0-4.137-1.864-6.001-6.001-6.001zm3.873 12.872c0 1.051-1.082 2.651-2.484 2.651-.837 0-1.332-.267-2.308-1.243-.655-.655-1.488-1.755-1.831-1.755-.305 0-.419.229-.419.648v1.658c0 .762-.495 1.22-.991 1.22-1.563 0-4.575-1.335-6.253-4.765-.458-.953-.877-2.325-.877-3.431 0-.61.458-1.068 1.068-1.068h1.448c.572 0 .877.343.991.839.42 1.716 1.411 3.203 1.83 3.203.229 0 .343-.114.343-.534V10.19c0-.953-.61-1.106-.61-1.639 0-.229.19-.42.495-.42h2.211c.458 0 .61.229.61.686v3.127c0 .343.152.534.343.534.343 0 1.068-1.22 1.487-2.173.229-.534.42-.991.42-1.601 0-.42.343-.762.762-.762h1.639c.877 0 .991.381.801.839-.534 1.258-2.02 3.393-2.02 3.393s-.152.267 0 .495c.152.229.648.724 1.106 1.22 1.106 1.182 1.677 2.135 1.677 2.973z"/></svg>
+                <a href="https://vk.com/voskhod_3m" target="_blank" class="group flex flex-col items-center gap-2">
+                    <div class="w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center group-hover:bg-blue-600 transition">
+                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M13.162 18.994c-6.09 0-9.567-4.172-9.711-11.106h3.058c.105 5.088 2.344 7.243 4.12 7.687V7.888h2.877v4.392c1.76-.188 3.596-2.19 4.223-4.392h2.877a10.217 10.217 0 01-3.878 5.604 10.428 10.428 0 014.522 5.492h-3.153a6.386 6.386 0 00-4.591-3.984v3.984h-1.344z"/></svg>
+                    </div>
+                    <span class="text-[10px] uppercase tracking-widest text-slate-500">VKontakte</span>
+                </a>
+                <a href="https://tenchat.ru/voskhod_3m" target="_blank" class="group flex flex-col items-center gap-2">
+                    <div class="w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center group-hover:bg-red-500 transition">
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M19 2H5C3.34315 2 2 3.34315 2 5V19C2 20.6569 3.34315 22 5 22H19C20.6569 22 22 20.6569 22 19V5C22 3.34315 20.6569 2 19 2ZM17 9H13V18H11V9H7V7H17V9Z"/></svg>
+                    </div>
+                    <span class="text-[10px] uppercase tracking-widest text-slate-500">TenChat</span>
                 </a>
             </div>
             <p class="mt-20 text-sm text-slate-500">© Андрей Давиденко. Все права защищены.</p>
@@ -221,28 +336,17 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-        // Слайдер отзывов
-        new Swiper(".testimonial-swiper", {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            pagination: { el: ".swiper-pagination", clickable: true },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
-
-        // Слайдер сертификатов
         new Swiper(".certificateSwiper", {
-            slidesPerView: 2,
-            spaceBetween: 15,
-            loop: true,
+            slidesPerView: 2, spaceBetween: 15, loop: true,
             autoplay: { delay: 3000 },
-            breakpoints: {
-                640: { slidesPerView: 3 },
-                1024: { slidesPerView: 6 }
-            }
+            breakpoints: { 640: { slidesPerView: 3 }, 1024: { slidesPerView: 6 } }
+        });
+        new Swiper(".testimonialSwiper", {
+            slidesPerView: 1, spaceBetween: 20,
+            pagination: { el: ".swiper-pagination", clickable: true },
+            breakpoints: { 768: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }
         });
     </script>
 </body>
+
 </html>
