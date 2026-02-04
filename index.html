@@ -357,18 +357,66 @@
         </div>
     </section>
 
-    <section class="py-12 border-t border-slate-100">
-        <div class="container mx-auto px-6">
-            <div class="grid grid-cols-3 md:grid-cols-6 gap-8 opacity-40 grayscale hover:grayscale-0 transition duration-500 items-center">
-                <img src="12__.jpg" class="h-6 mx-auto">
-                <img src="" class="h-6 mx-auto">
-                <img src="" class="h-6 mx-auto">
-                <img src="" class="h-6 mx-auto">
-                <img src="" class="h-6 mx-auto">
-                <img src="" class="h-6 mx-auto">
-            </div>
+     <script>
+        new Swiper(".testimonialSwiper", {
+            slidesPerView: 1,
+            spaceBetween: 24,
+            navigation: {
+                nextEl: ".swiper-button-next-custom",
+                prevEl: ".swiper-button-prev-custom",
+            },
+            breakpoints: {
+                768: { slidesPerView: 2 },
+                1024: { slidesPerView: 6 } // Выводит 6 отзывов на десктопе
+            }
+        });
+    </script>
+
+<section class="py-16 bg-white border-y border-slate-100 overflow-hidden">
+    <div class="container mx-auto px-6 mb-10">
+        <p class="text-center text-slate-400 text-sm font-semibold uppercase tracking-widest">Работал с проектами на площадках</p>
+    </div>
+
+    <div class="relative flex overflow-x-hidden">
+        <div class="flex animate-marquee whitespace-nowrap items-center gap-16 md:gap-24 py-4">
+            <img src="12__.jpg" class="h-10 md:h-14 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition duration-300" alt="Evotor">
+            <img src="Avito_logo.svg.jpg" class="h-10 md:h-14 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition duration-300" alt="Saby">
+            <img src="Ozon_Logo.jpg" class="h-8 md:h-12 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition duration-300" alt="VC.ru">
+            <img src="n_679cc0cbcf668.jpg" class="h-9 md:h-13 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition duration-300" alt="Habr">
+            <img src="Screenshot_5.jpg" class="h-10 md:h-14 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition duration-300">
+            <img src="Screenshot_6.jpg" class="h-10 md:h-14 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition duration-300">
+            <img src="Tinkoff.zhurnal-1.png" class="h-10 md:h-14 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition duration-300">
+            <img src="bit.jpg" class="h-10 md:h-14 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition duration-300">
+            <img src="ispmanager-logo.jpg" class="h-10 md:h-14 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition duration-300">
+
+            <img src="12__.jpg" class="h-10 md:h-14 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition duration-300" alt="Evotor">
+            <img src="Avito_logo.svg.jpg" class="h-10 md:h-14 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition duration-300" alt="Saby">
+            <img src="Ozon_Logo.jpg" class="h-8 md:h-12 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition duration-300" alt="VC.ru">
+            <img src="n_679cc0cbcf668.jpg" class="h-9 md:h-13 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition duration-300" alt="Habr">
+            <img src="Screenshot_5.jpg" class="h-10 md:h-14 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition duration-300">
+            <img src="Screenshot_6.jpg" class="h-10 md:h-14 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition duration-300">
+            <img src="Tinkoff.zhurnal-1.png" class="h-10 md:h-14 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition duration-300">
+            <img src="bit.jpg" class="h-10 md:h-14 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition duration-300">
+            <img src="ispmanager-logo.jpg" class="h-10 md:h-14 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition duration-300">
         </div>
-    </section>
+    </div>
+</section>
+
+<style>
+    @keyframes marquee {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+    }
+    .animate-marquee {
+        display: flex;
+        width: max-content;
+        animation: marquee 30s linear infinite;
+    }
+    /* Остановка при наведении */
+    .animate-marquee:hover {
+        animation-play-state: paused;
+    }
+</style>
 
     <footer id="contacts" class="bg-slate-900 text-white py-20">
         <div class="container mx-auto px-6 text-center">
@@ -421,6 +469,7 @@
 </body>
 
 </html>
+
 
 
 
