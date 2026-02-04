@@ -52,77 +52,73 @@
         </div>
     </section>
 
-    <section id="cases" class="py-20 container mx-auto px-6">
-        <div class="mb-16 text-center">
-            <h2 class="text-3xl font-bold mb-4">Избранные кейсы</h2>
-            <p class="text-slate-600 max-w-lg mx-auto">Проекты, которыми я горжусь</p>
+   <section id="cases" class="py-24 bg-white">
+    <div class="container mx-auto px-6">
+        <div class="max-w-3xl mb-16">
+            <h2 class="text-4xl font-bold mb-4 tracking-tight">Избранные кейсы</h2>
+            <div class="h-1.5 w-20 bg-blue-600 rounded-full mb-6"></div>
+            <p class="text-slate-600 text-lg">Проекты, где текст стал инструментом решения бизнес-задач: от формирования имиджа до упаковки сложных ИТ-продуктов.</p>
         </div>
-        
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            
-            <div class="case-card group flex flex-col h-full bg-white rounded-2xl border border-slate-100 p-4 shadow-sm hover:shadow-md transition">
-                <div class="rounded-xl overflow-hidden mb-4 aspect-video bg-slate-200">
-                    <img src="https://placehold.co/600x400?text=Rock+Bar" class="w-full h-full object-cover transition duration-500">
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+            <div class="group relative flex flex-col bg-slate-50 rounded-3xl overflow-hidden border border-slate-100 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
+                <div class="relative aspect-[16/9] overflow-hidden">
+                    <img src="https://placehold.co/800x450?text=Rock+Bar+Case" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Rock Bar">
+                    <div class="absolute top-4 left-4">
+                        <span class="bg-blue-600 text-white text-[10px] font-bold px-3 py-1.5 rounded-full uppercase tracking-wider shadow-lg">Интервью</span>
+                    </div>
                 </div>
-                <span class="text-[10px] font-bold text-blue-600 uppercase tracking-widest">Интервью</span>
-                <h3 class="text-xl font-bold mt-2 mb-3 leading-snug group-hover:text-blue-600 transition">Как превратить локальный бар в масштабное комьюнити</h3>
-                <p class="text-slate-500 text-sm mb-6 flex-grow">История трансформации «бара для своих» в прибыльный проект с лояльной аудиторией. Разбираем, почему атмосфера важнее меню и как превращать случайных гостей в амбассадоров.</p>
-                <a href="https://zhiza.evotor.ru/kak-my-prevratili-rok-bar-dlya-druzej-v-bolshoe-komyuniti-7-sovetov-predprinimatelyam/" target="_blank" class="inline-block text-center bg-slate-900 text-white text-xs font-bold py-3 px-6 rounded-lg hover:bg-blue-600 transition">Подробнее</a>
+                <div class="p-8 flex flex-col flex-grow">
+                    <h3 class="text-2xl font-bold mb-4 group-hover:text-blue-600 transition">Как превратить локальный бар в масштабное комьюнити</h3>
+                    <p class="text-slate-600 mb-8 flex-grow">Подготовил глубокое интервью для медиа «Жиза». Через личную историю предпринимателя раскрыли внутренние процессы бизнеса, создав материал, который вызвал живой отклик у целевой аудитории.</p>
+                    <div class="flex items-center justify-between mt-auto">
+                        <div class="flex flex-col">
+                            <span class="text-[10px] uppercase text-slate-400 font-bold tracking-widest">Площадка</span>
+                            <span class="font-semibold text-slate-700">Zhiza.Evotor</span>
+                        </div>
+                        <a href="https://zhiza.evotor.ru/kak-my-prevratili-rok-bar-dlya-druzej-v-bolshoe-komyuniti-7-sovetov-predprinimatelyam/" target="_blank" class="inline-flex items-center gap-2 bg-slate-900 text-white px-6 py-3 rounded-xl font-bold hover:bg-blue-600 transition shadow-md">
+                            Читать материал
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                    </div>
+                </div>
             </div>
 
-            <div class="case-card group flex flex-col h-full bg-white rounded-2xl border border-slate-100 p-4 shadow-sm hover:shadow-md transition">
-                <div class="rounded-xl overflow-hidden mb-4 aspect-video bg-slate-200">
-                    <img src="https://placehold.co/600x400?text=HR+Services" class="w-full h-full object-cover transition duration-500">
+            <div class="flex flex-col gap-10">
+                <div class="group flex flex-col md:flex-row bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-500">
+                    <div class="md:w-2/5 relative overflow-hidden">
+                        <img src="https://placehold.co/400x400?text=HR" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                    </div>
+                    <div class="p-6 md:w-3/5 flex flex-col">
+                        <span class="text-blue-600 text-[10px] font-bold uppercase tracking-widest mb-2">Обзорная статья</span>
+                        <h3 class="text-xl font-bold mb-3 group-hover:text-blue-600 transition">Где искать таланты: обзор 9 сервисов для HR</h3>
+                        <p class="text-slate-500 text-sm mb-6">Структурировал и проанализировал ключевые инструменты рекрутинга, создав полезный гайд для руководителей и HR-специалистов.</p>
+                        <a href="https://zhiza.evotor.ru/gde-sejchas-iskat-sotrudnikov-devyat-servisov-dlya-rukovoditeley-i-hr-specialistov/" target="_blank" class="text-slate-900 font-bold text-sm inline-flex items-center gap-1 hover:text-blue-600 transition mt-auto">
+                            Смотреть статью
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        </a>
+                    </div>
                 </div>
-                <span class="text-[10px] font-bold text-blue-600 uppercase tracking-widest">Подборка</span>
-                <h3 class="text-xl font-bold mt-2 mb-3 leading-snug group-hover:text-blue-600 transition">Где искать таланты сегодня: обзор 9 лучших сервисов для HR</h3>
-                <p class="text-slate-500 text-sm mb-6 flex-grow">Анализ ключевых инструментов — от классических джоб-бордов до ИИ-сервисов. Узнайте, как оптимизировать найм и сократить время на поиск кандидата в 2024 году.</p>
-                <a href="https://zhiza.evotor.ru/gde-sejchas-iskat-sotrudnikov-devyat-servisov-dlya-rukovoditelej-i-hr-specialistov/" target="_blank" class="inline-block text-center bg-slate-900 text-white text-xs font-bold py-3 px-6 rounded-lg hover:bg-blue-600 transition">Подробнее</a>
-            </div>
 
-            <div class="case-card group flex flex-col h-full bg-white rounded-2xl border border-slate-100 p-4 shadow-sm hover:shadow-md transition">
-                <div class="rounded-xl overflow-hidden mb-4 aspect-video bg-slate-200">
-                    <img src="https://placehold.co/600x400?text=CRM+XRM" class="w-full h-full object-cover transition duration-500">
+                <div class="group flex flex-col md:flex-row bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-500">
+                    <div class="md:w-2/5 relative overflow-hidden">
+                        <img src="https://placehold.co/400x400?text=Saby" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                    </div>
+                    <div class="p-6 md:w-3/5 flex flex-col">
+                        <span class="text-blue-600 text-[10px] font-bold uppercase tracking-widest mb-2">ИТ-копирайтинг</span>
+                        <h3 class="text-xl font-bold mb-3 group-hover:text-blue-600 transition">От простой базы к XRM: экосистема Saby</h3>
+                        <p class="text-slate-500 text-sm mb-6">Перевел сложную техническую терминологию на язык пользы для бизнеса, описав преимущества перехода на единую экосистему.</p>
+                        <a href="https://saby.ru/articles/crm/xrm" target="_blank" class="text-slate-900 font-bold text-sm inline-flex items-center gap-1 hover:text-blue-600 transition mt-auto">
+                            Смотреть статью
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        </a>
+                    </div>
                 </div>
-                <span class="text-[10px] font-bold text-blue-600 uppercase tracking-widest">Информационная статья</span>
-                <h3 class="text-xl font-bold mt-2 mb-3 leading-snug group-hover:text-blue-600 transition">От простой базы к XRM: новый уровень управления отношениями</h3>
-                <p class="text-slate-500 text-sm mb-6 flex-grow">Как интеграция всех процессов в единую экосистему Saby помогает видеть бизнес на 360 градусов. Кейс об автоматизации, превращающей хаос в систему.</p>
-                <a href="https://saby.ru/articles/crm/xrm" target="_blank" class="inline-block text-center bg-slate-900 text-white text-xs font-bold py-3 px-6 rounded-lg hover:bg-blue-600 transition">Подробнее</a>
             </div>
-
-            <div class="case-card group flex flex-col h-full bg-white rounded-2xl border border-slate-100 p-4 shadow-sm hover:shadow-md transition">
-                <div class="rounded-xl overflow-hidden mb-4 aspect-video bg-slate-200">
-                    <img src="https://placehold.co/600x400?text=Global+IT" class="w-full h-full object-cover transition duration-500">
-                </div>
-                <span class="text-[10px] font-bold text-blue-600 uppercase tracking-widest">Интервью</span>
-                <h3 class="text-xl font-bold mt-2 mb-3 leading-snug group-hover:text-blue-600 transition">Путь на международную арену: опыт Lingvanex</h3>
-                <p class="text-slate-500 text-sm mb-6 flex-grow">Реальный опыт запуска IT-продукта на зарубежных рынках. Как адаптировать софт под разные культуры и найти первых клиентов за границей.</p>
-                <a href="https://zhiza.evotor.ru/kak-razrabotchiku-vyvesti-svoj-produkt-na-mezhdunarodnyj-rynok-opyt-faundera-lingvanex/" target="_blank" class="inline-block text-center bg-slate-900 text-white text-xs font-bold py-3 px-6 rounded-lg hover:bg-blue-600 transition">Подробнее</a>
-            </div>
-
-            <div class="case-card group flex flex-col h-full bg-white rounded-2xl border border-slate-100 p-4 shadow-sm hover:shadow-md transition">
-                <div class="rounded-xl overflow-hidden mb-4 aspect-video bg-slate-200">
-                    <img src="https://placehold.co/600x400?text=Regional+SEO" class="w-full h-full object-cover transition duration-500">
-                </div>
-                <span class="text-[10px] font-bold text-blue-600 uppercase tracking-widest">Информационная статья</span>
-                <h3 class="text-xl font-bold mt-2 mb-3 leading-snug group-hover:text-blue-600 transition">Захват регионов: как продвинуть сайт по всей России</h3>
-                <p class="text-slate-500 text-sm mb-6 flex-grow">Пошаговое руководство по масштабированию видимости сайта за пределами столицы: поддомены против папок и работа с локальными ссылками.</p>
-                <a href="https://findby.ru/blog/prodvizhenie-sajta-po-regionam-kak-prodvinut-po-vsej-rossii/" target="_blank" class="inline-block text-center bg-slate-900 text-white text-xs font-bold py-3 px-6 rounded-lg hover:bg-blue-600 transition">Подробнее</a>
-            </div>
-
-            <div class="case-card group flex flex-col h-full bg-white rounded-2xl border border-slate-100 p-4 shadow-sm hover:shadow-md transition">
-                <div class="rounded-xl overflow-hidden mb-4 aspect-video bg-slate-200">
-                    <img src="https://placehold.co/600x400?text=Custom+SEO" class="w-full h-full object-cover transition duration-500">
-                </div>
-                <span class="text-[10px] font-bold text-blue-600 uppercase tracking-widest">Информационная статья</span>
-                <h3 class="text-xl font-bold mt-2 mb-3 leading-snug group-hover:text-blue-600 transition">Почему шаблонное SEO больше не работает</h3>
-                <p class="text-slate-500 text-sm mb-6 flex-grow">Исследуем, как глубокий анализ ниши и кастомная стратегия влияют на ROI и позволяют обходить крупных конкурентов с огромными бюджетами.</p>
-                <a href="https://findby.ru/blog/individualnyj-podhod-v-seo/" target="_blank" class="inline-block text-center bg-slate-900 text-white text-xs font-bold py-3 px-6 rounded-lg hover:bg-blue-600 transition">Подробнее</a>
-            </div>
-
         </div>
-    </section>
-
+    </div>
+</section>
+    
     <div class="mt-16 mb-24 text-center">
             <a href="https://voskhod-3m1.github.io/portfolio/cases" target="_blank" class="inline-flex items-center gap-2 bg-white border-2 border-blue-600 text-blue-600 px-10 py-3 rounded-full font-bold hover:bg-blue-600 hover:text-white transition-all duration-300 shadow-lg shadow-blue-100 group">
                 Все кейсы
@@ -383,4 +379,5 @@
 </body>
 
 </html>
+
 
